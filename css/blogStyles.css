@@ -1,0 +1,66 @@
+@font-face {
+    font-family: Cabin;
+    src: url(Cabin_font/Cabin-Regular.otf);
+}
+
+a,h2,h3 {
+    color: #0C403C;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+h1,h2,h3,h4{
+    letter-spacing: 0.6px;
+}
+
+h1 {
+  font-size: 4.0vh;
+}
+h2 {
+  font-size: 4.0vh;
+}
+h3 {
+  font-size: 3.6vh;
+}
+h4 {
+  font-size: 3.2vh;
+}
+p, a, button{
+  font-size: 2.7vh;
+}
+
+@media screen and (min-device-width: 1200px) /* Desktop */ {
+    .page {
+     //   max-width: 800px;
+    }
+}
+
+//@media screen and (max-device-width: 1200px) /* Mobile */ {
+//    .page {
+//        width: 95%;
+//    }
+//}
+
+
+
+
+/*These below from the media query part of the no more tables file*/
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+	body { 
+		padding: 0; 
+		margin: 0; 
+		width: 320px; }
+	}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	body { 
+		width: 495px; 
+	}
+}
