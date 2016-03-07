@@ -24,6 +24,8 @@ td{
 
 td, th { 
 	padding: 6px; 
+	padding-top: 12px;
+    padding-bottom: 12px;
 	text-align: left; 	
 }
 
@@ -60,6 +62,11 @@ only screen and (max-width: 0px),
 		position: relative;
 		padding-left: 50%; 
 		/*font-size: 12px;*/
+	}
+	
+	td, th {
+		padding-top: 7px;
+		padding-bottom: 7px;
 	}
 	
 	td:before { 
