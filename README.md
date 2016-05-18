@@ -1,5 +1,5 @@
 ##No More Tables generator
-###A soolution to building responsive tables for phone and PC alike.
+###A solution to building responsive tables for phone and PC alike.
 
 The issue with tables is that on phone, any more than three columns will go off over to the right.
 
@@ -28,9 +28,11 @@ When you've got the data in the window, and you've given it a name etc, you can 
 You need to set the point at which the table will collapse in on itself. This is to ensure your table doesn't look bad on phone etc. If your display is thinner than the breakpoint, it will collapse.
 
 Big screen - 
+
 ![Table large](readmePics/tableBig.png)
 
 Small screen - 
+
 ![Table small](readmePics/tableSmall.png) 
 
 The result is a html table that uses media queries to be responsive... no JavaScript needed.
