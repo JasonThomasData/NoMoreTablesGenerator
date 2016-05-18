@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset='UTF-8'>
+	
+	<title>No More Tables generator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='js/jquery-2.1.4.min.js'></script>
+	<script src='js/jquery-ui-1.11.4/jquery-ui.min.js'></script>
+	<script src='js/FileSaver.min.js'></script>
+	<link rel="stylesheet" href="css/siteStyles.css">
+    <link rel='stylesheet' href='js/jquery-ui-1.11.4/jquery-ui.min.css'>	
+	<link rel="stylesheet" href="css/tableStyles.css">
+	<link rel="stylesheet" href="css/sbsStyles/styles.css">
+</head>
+
+<body>
+	<!--Feel free to do anything with this that isn't illegal, unless your laws restrict freedom, in which case just do what you want.-->
+	<div id="option-content">
+		<div> <!--I put this div here for consistency, since the two sections below have the same structure-->
+			<h1>Responsive table generator - No More Tables</h1>
+			<p>Tables that have too many columns can look squished, or go off the screen, on small devices. This table generator makes tables collapse on small screens.</p>
+			<h2># Input csv or table data (from Excel or online)</h2>
+			<p>Optional (but recommended): </p>
+			<textarea id="giveTableHeading" rows="1" placeholder="Give your table a heading"></textarea>
+			<p>Required: </p>
+			<textarea id="textAreaData" rows="4" placeholder="Paste csv or Excel data"></textarea><br>
+			<p>Optional (but recommended): </p>
+			<textarea id="giveTableDataSourceName" rows="1" placeholder="Name of data source"></textarea>
+			<p>Optional (but recommended): </p>
+			<textarea id="giveTableDataSourceLink" rows="1" placeholder="Link to the data source"></textarea>
+		</div>
+		<div id='revealOne'>
+			<h2># Set a breakpoint for the table</h2>
+			<p>This is the point when the table will look bad on a small screen, because it's too squishy. Reduce the slider until the table stops getting smaller if unsure.</p>
+			<p>Once set, you can see what the table will do on a screen smaller than the slider's width</p>
+			<div id="tableWrapper">
+				<div id="showWidthPx"></div>
+				<div id="slider"></div>
+				<div id="tableWrapper">
+				<div id="tableGoesHere"></div>
+			</div>
+		</div>
+		<div id='revealTwo'>
+			<h2># Save your file</h2>
+			<button id="saveTable">Save table</button>
+		</div>
+		<p>This is a jquery solution to creating responsive tables, using the No More Tables CSS hack. To find out more, check out Chris Coyier's excellent example on <a href="https://css-tricks.com/responsive-data-tables/" target="_target">CSS-Tricks</a>. Code for this site is on Github.</p>
+	</div>
+
+	<script src="js/processTableData.js"></script>	
+</body>
+
+</html>
