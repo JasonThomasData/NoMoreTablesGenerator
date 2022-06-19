@@ -169,21 +169,12 @@ $(document).ready(function() {
 		$.get('template.txt')
 			.done(function(getHtmlTemplate){
 				htmlToSave = processHtml(getHtmlTemplate, styleString) //After this, the table will have the styles and html in one long string
+				console.log(htmlToSave)
+				var blob = new Blob([htmlToSave], {type: "text/plain;charset=utf-8"});
+				saveAs(blob, fileName);
 			})
 			.fail(function(data){
 				alert('Table template not located', data);
-				return
-			})
-
-		$.post('saveHTML.php', {
-				fileNameData : fileName,
-				htmlToSaveData : htmlToSave
-			})
-			.done(function(){
-				alert('Your file saved as ...' + htmlToSave)
-			})
-			.fail(function(data){
-				alert('File was not saved', data);
 				return
 			})
 	});
